@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1045.0" style="-fx-background-color: #3A3A3A;" stylesheets="@main-view.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.automata.MainController">
+   <children>
+       <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="318.0" text="Automata - Numeros de una llanta" textFill="WHITE">
+           <font>
+             <Font size="20.0" />
+           </font>
+       </Label>
+      <TextField fx:id="entry" layoutX="77.0" layoutY="99.0" prefHeight="27.0" prefWidth="318.0" />
+      <Label layoutX="19.0" layoutY="99.0" prefHeight="27.0" prefWidth="58.0" text="Entrada" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button layoutX="635.0" layoutY="64.0" mnemonicParsing="false" onMouseClicked="#onCleanButtonClick" prefHeight="71.0" prefWidth="171.0" text="Limpiar" />
+      <Button layoutX="438.0" layoutY="63.0" mnemonicParsing="false" onMousePressed="#onStartButtonClick" prefHeight="71.0" prefWidth="171.0" text="Iniciar" />
+      <ImageView fx:id="img" fitHeight="135.0" fitWidth="139.0" layoutX="889.0" layoutY="8.0">
+         <image>
+            <Image url="@assets/uwu.jpg" />
+         </image></ImageView>
+      <Pane layoutX="12.0" layoutY="149.0" prefHeight="536.0" prefWidth="1021.0" style="-fx-border-color: aqua;">
+         <children>
+            <Group layoutX="59.0" layoutY="60.0">
+               <children>
+                  <Circle fx:id="q0" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q0" textFill="#383838" />
+               </children>
+            </Group>
+            <Polyline fill="#daf5c0" layoutX="30.0" layoutY="50.0" points="-50.0, -40.0, 50.0, -40.0, 0.0, 60.0, -50.0, -40.0" rotate="-90.0" scaleX="0.5" scaleY="0.3" strokeType="INSIDE" />
+            <Line endX="-49.0" endY="-145.0" layoutX="152.0" layoutY="205.0" startX="-78.0" startY="-145.0" stroke="WHITE" />
+            <Group layoutX="114.0" layoutY="60.0">
+               <children>
+                  <Circle fx:id="q1" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q1" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="168.0" layoutY="60.0">
+               <children>
+                  <Circle fx:id="q2" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q2" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="-9.0" endY="-155.0" layoutX="162.0" layoutY="215.0" startX="-33.0" startY="-155.0" stroke="WHITE" />
+            <Group layoutX="221.0" layoutY="60.0">
+               <children>
+                  <Circle fx:id="q3" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q3" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="274.0" layoutY="60.0">
+               <children>
+                  <Circle fx:id="q4" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q4" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="325.0" layoutY="60.0">
+               <children>
+                  <Circle fx:id="q5" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q5" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="377.0" layoutY="60.0">
+               <children>
+                  <Circle fx:id="q6" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q6" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="433.0" layoutY="60.0">
+               <children>
+                  <Circle fx:id="q7" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q7" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="493.0" layoutY="60.0">
+               <children>
+                  <Circle fx:id="q8" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q8" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="547.0" layoutY="60.0">
+               <children>
+                  <Circle fx:id="q9" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q9" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="606.0" layoutY="60.0">
+               <children>
+                  <Circle fx:id="q10" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q10" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="-9.0" endY="-156.0" layoutX="215.0" layoutY="216.0" startX="-32.0" startY="-156.0" stroke="WHITE" />
+            <Label layoutX="79.0" layoutY="34.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="1" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="135.0" layoutY="34.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="9" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="188.0" layoutY="35.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Line endX="-6.0" endY="-154.0" layoutX="265.0" layoutY="214.0" startX="-29.0" startY="-154.0" stroke="WHITE" />
+            <Line endX="-5.0" endY="-155.0" layoutX="315.0" layoutY="215.0" startX="-26.0" startY="-155.0" stroke="WHITE" />
+            <Line endX="37.666656494140625" endY="-165.0" layoutX="325.0" layoutY="225.0" startX="15.0" startY="-165.0" stroke="WHITE" />
+            <Line endX="83.0" endY="-175.0" layoutX="335.0" layoutY="235.0" startX="57.0" startY="-175.0" stroke="WHITE" />
+            <Line endX="133.0" endY="-185.0" layoutX="345.0" layoutY="245.0" startX="103.0" startY="-185.0" stroke="WHITE" />
+            <Line endX="177.0" endY="-195.0" layoutX="355.0" layoutY="255.0" startX="153.0" startY="-195.0" stroke="WHITE" />
+            <Line endX="226.0" endY="-205.0" layoutX="365.0" layoutY="265.0" startX="197.0" startY="-205.0" stroke="WHITE" />
+            <Label layoutX="242.0" layoutY="34.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="/" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="293.0" layoutY="34.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="6" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="344.0" layoutY="34.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="0" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="399.0" layoutY="35.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="R" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="457.0" layoutY="34.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="1" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="515.0" layoutY="35.0" prefHeight="27.0" prefWidth="10.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="573.0" layoutY="34.0" prefHeight="27.0" prefWidth="10.0" style="-fx-alignment: center;" text="8" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="804.0" layoutY="60.0">
+               <children>
+                  <Circle fx:id="q11" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q11" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="885.0" layoutY="60.0">
+               <children>
+                  <Circle fx:id="q0111111111111" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="q12" fill="#bcdeff" radius="12.5" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q12" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="414.0" endY="-215.0" layoutX="375.0" layoutY="275.0" startX="246.0" startY="-215.0" stroke="WHITE" />
+            <Label layoutX="683.0" layoutY="35.0" prefHeight="27.0" prefWidth="10.0" style="-fx-alignment: center;" text="8" textAlignment="CENTER" textFill="WHITE" />
+            <Line endX="363.0" endY="-224.0" layoutX="507.0" layoutY="284.0" startX="312.0" startY="-224.0" stroke="WHITE" />
+            <Label layoutX="842.0" layoutY="36.0" prefHeight="27.0" prefWidth="10.0" style="-fx-alignment: center;" text="V" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="140.0" layoutY="120.0">
+               <children>
+                  <Circle fx:id="q13" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q13" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="198.0" layoutY="120.0">
+               <children>
+                  <Circle fx:id="q14" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q14" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="255.0" layoutY="120.0">
+               <children>
+                  <Circle fx:id="q15" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q15" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="315.0" layoutY="120.0">
+               <children>
+                  <Circle fx:id="q16" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q16" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="384.0" layoutY="120.0">
+               <children>
+                  <Circle fx:id="q17" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q17" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="455.0" layoutY="120.0">
+               <children>
+                  <Circle fx:id="q18" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q18" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="530.0" layoutY="120.0">
+               <children>
+                  <Circle fx:id="q19" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q19" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="613.0" layoutY="120.0">
+               <children>
+                  <Circle fx:id="q20" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q20" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="-40.0" endY="-120.0" layoutX="172.0" layoutY="225.0" startX="-50.66667175292969" startY="-150.0" stroke="WHITE" />
+            <Label layoutX="128.0" layoutY="76.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="8" textAlignment="CENTER" textFill="WHITE" />
+            <Line endX="1.0" endY="-115.0" layoutX="182.0" layoutY="235.0" startX="-27.0" startY="-115.0" stroke="WHITE" />
+            <Label layoutX="163.0" layoutY="96.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Line endX="48.0" endY="-125.0" layoutX="192.0" layoutY="245.0" startX="21.0" startY="-125.0" stroke="WHITE" />
+            <Label layoutX="220.0" layoutY="96.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="/" textAlignment="CENTER" textFill="WHITE" />
+            <Line endX="98.0" endY="-135.0" layoutX="202.0" layoutY="255.0" startX="68.0" startY="-135.0" stroke="WHITE" />
+            <Label layoutX="279.0" layoutY="96.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Line endX="156.66665649414062" endY="-145.0" layoutX="212.0" layoutY="265.0" startX="118.0" startY="-145.0" stroke="WHITE" />
+            <Label layoutX="345.0" layoutY="97.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="413.0" layoutY="97.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="R" textAlignment="CENTER" textFill="WHITE" />
+            <Line endX="218.0" endY="-155.0" layoutX="222.0" layoutY="275.0" startX="177.0" startY="-155.0" stroke="WHITE" />
+            <Line endX="283.33331298828125" endY="-165.0" layoutX="232.0" layoutY="285.0" startX="238.0" startY="-165.0" stroke="WHITE" />
+            <Label layoutX="487.0" layoutY="98.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="1" textAlignment="CENTER" textFill="WHITE" />
+            <Line endX="356.0" endY="-175.0" layoutX="242.0" layoutY="295.0" startX="303.0" startY="-175.0" stroke="WHITE" />
+            <Label layoutX="565.0" layoutY="92.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="6" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="696.0" layoutY="105.0">
+               <children>
+                  <Circle fx:id="q21" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q21" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="373.00390625" endY="-184.5" layoutX="252.0" layoutY="305.0" startX="429.0" startY="-195.33334350585938" stroke="WHITE" />
+            <Line endX="449.0" endY="-215.3333282470703" layoutX="262.0" layoutY="315.0" startX="528.5" startY="-248.25" stroke="WHITE" />
+            <Label layoutX="643.0" layoutY="88.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="8" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="725.0" layoutY="70.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="3" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="108.0" layoutY="179.0">
+               <children>
+                  <Circle fx:id="q22" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q22" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="-86.0" endY="-66.5" layoutX="182.0" layoutY="235.0" startX="-118.66666412353516" startY="-161.3333282470703" stroke="WHITE" />
+            <Label layoutX="82.0" layoutY="102.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="2" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="166.0" layoutY="179.0">
+               <children>
+                  <Circle fx:id="q23" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q23" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="225.0" layoutY="179.0">
+               <children>
+                  <Circle fx:id="q24" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q24" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="286.0" layoutY="179.0">
+               <children>
+                  <Circle fx:id="q25" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q25" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="355.0" layoutY="179.0">
+               <children>
+                  <Circle fx:id="q26" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q26" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="423.0" layoutY="179.0">
+               <children>
+                  <Circle fx:id="q27" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q27" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="490.0" layoutY="179.0">
+               <children>
+                  <Circle fx:id="q28" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q28" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="563.0" layoutY="179.0">
+               <children>
+                  <Circle fx:id="q29" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q29" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="636.0" layoutY="179.0">
+               <children>
+                  <Circle fx:id="q30" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q30" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="706.0" layoutY="179.0">
+               <children>
+                  <Circle fx:id="q31" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q31" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="441.33331298828125" endY="-156.0" layoutX="272.0" layoutY="325.0" startX="522.5" startY="-253.5" stroke="WHITE" />
+            <Label layoutX="737.0" layoutY="109.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="4" textAlignment="CENTER" textFill="WHITE" />
+            <Line endX="-71.99609375" endY="-65.5" layoutX="192.0" layoutY="245.0" startX="-41.0" startY="-65.5" stroke="WHITE" />
+            <Line endX="-21.0" endY="-76.0" layoutX="202.0" layoutY="255.0" startX="8.0" startY="-76.0" stroke="WHITE" />
+            <Line endX="28.0" endY="-86.0" layoutX="212.0" layoutY="265.0" startX="58.0" startY="-86.0" stroke="WHITE" />
+            <Line endX="79.0" endY="-96.0" layoutX="222.0" layoutY="275.0" startX="118.0" startY="-96.0" stroke="WHITE" />
+            <Line endX="138.0" endY="-106.0" layoutX="232.0" layoutY="285.0" startX="176.0" startY="-106.0" stroke="WHITE" />
+            <Line endX="196.0" endY="-116.0" layoutX="242.0" layoutY="295.0" startX="233.0" startY="-116.0" stroke="WHITE" />
+            <Line endX="253.0" endY="-126.0" layoutX="252.0" layoutY="305.0" startX="296.0" startY="-126.0" stroke="WHITE" />
+            <Line endX="316.0" endY="-136.0" layoutX="262.0" layoutY="315.0" startX="360.0" startY="-136.0" stroke="WHITE" />
+            <Line endX="379.0" endY="-146.0" layoutX="272.0" layoutY="325.0" startX="418.66668701171875" startY="-146.0" stroke="WHITE" />
+            <Label layoutX="129.0" layoutY="156.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="1" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="189.0" layoutY="156.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="249.0" layoutY="157.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="/" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="315.0" layoutY="155.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="384.0" layoutY="155.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="451.0" layoutY="155.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="R" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="521.0" layoutY="155.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="1" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="594.0" layoutY="155.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="7" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="664.0" layoutY="154.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="9" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="320.0" layoutY="230.0">
+               <children>
+                  <Circle fx:id="q32" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q32" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="60.666656494140625" endY="-91.0" layoutX="232.0" layoutY="285.0" startX="78.0" startY="-67.33334350585938" stroke="WHITE" />
+            <Label layoutX="303.0" layoutY="188.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="4" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="381.0" layoutY="230.0">
+               <children>
+                  <Circle fx:id="q33" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q33" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="93.0" endY="-65.0" layoutX="242.0" layoutY="295.0" startX="124.0" startY="-65.0" stroke="WHITE" />
+            <Group layoutX="437.0" layoutY="230.0">
+               <children>
+                  <Circle fx:id="q34" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q34" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="498.0" layoutY="230.0">
+               <children>
+                  <Circle fx:id="q35" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q35" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="561.0" layoutY="230.0">
+               <children>
+                  <Circle fx:id="q36" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q36" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="619.0" layoutY="230.0">
+               <children>
+                  <Circle fx:id="q37" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q37" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="680.0" layoutY="230.0">
+               <children>
+                  <Circle fx:id="q38" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q38" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="737.0" layoutY="230.0">
+               <children>
+                  <Circle fx:id="q0122111216" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="q39" fill="#bcdeff" radius="12.5" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q39" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="144.0" endY="-75.0" layoutX="252.0" layoutY="305.0" startX="170.0" startY="-75.0" stroke="WHITE" />
+            <Line endX="190.0" endY="-85.0" layoutX="262.0" layoutY="315.0" startX="221.0" startY="-85.0" stroke="WHITE" />
+            <Line endX="241.0" endY="-95.0" layoutX="272.0" layoutY="325.0" startX="274.0" startY="-95.0" stroke="WHITE" />
+            <Line endX="294.0" endY="-105.0" layoutX="282.0" layoutY="335.0" startX="322.0" startY="-105.0" stroke="WHITE" />
+            <Line endX="338.0" endY="-110.0" layoutX="327.0" layoutY="340.0" startX="307.0" startY="-110.0" stroke="WHITE" />
+            <Line endX="385.0" endY="-120.0" layoutX="337.0" layoutY="350.0" startX="358.0" startY="-120.0" stroke="WHITE" />
+            <Label layoutX="343.0" layoutY="205.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="402.0" layoutY="205.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="R" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="458.0" layoutY="204.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="1" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="523.0" layoutY="204.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="6" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="584.0" layoutY="205.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="9" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="643.0" layoutY="206.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="0" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="703.0" layoutY="206.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="W" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="540.0" layoutY="277.0">
+               <children>
+                  <Circle fx:id="q40" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q40" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="223.75" endY="-92.0" layoutX="282.0" layoutY="335.0" startX="247.0" startY="-68.0" stroke="WHITE" />
+            <Group layoutX="612.0" layoutY="277.0">
+               <children>
+                  <Circle fx:id="q41" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q41" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="305.0" endY="-68.0" layoutX="292.0" layoutY="345.0" startX="263.0" startY="-68.0" stroke="WHITE" />
+            <Line endX="325.0" endY="-81.25" layoutX="302.0" layoutY="355.0" startX="367.0" startY="-115.0" stroke="WHITE" />
+            <Label layoutX="520.0" layoutY="239.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="8" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="564.0" layoutY="257.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="8" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="634.0" layoutY="239.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="9" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="166.0" layoutY="230.0">
+               <children>
+                  <Circle fx:id="q42" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q42" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="224.0" layoutY="228.0">
+               <children>
+                  <Circle fx:id="q43" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q43" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="260.0" layoutY="277.0">
+               <children>
+                  <Circle fx:id="q44" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q44" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="-84.66667175292969" endY="-65.5" layoutX="202.0" layoutY="255.0" startX="-47.0" startY="-35.0" stroke="WHITE" />
+            <Line endX="-3.0" endY="-35.0" layoutX="212.0" layoutY="265.0" startX="-30.5" startY="-35.0" stroke="WHITE" />
+            <Line endX="11.0" endY="-36.0" layoutX="222.0" layoutY="275.0" startX="28.5" startY="-9.5" stroke="WHITE" />
+            <Group layoutX="315.0" layoutY="277.0">
+               <children>
+                  <Circle fx:id="q45" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q45" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="370.0" layoutY="277.0">
+               <children>
+                  <Circle fx:id="q46" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q46" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="424.0" layoutY="277.0">
+               <children>
+                  <Circle fx:id="q47" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q47" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="478.0" layoutY="277.0">
+               <children>
+                  <Circle fx:id="q48" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q48" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="68.0" endY="-8.0" layoutX="232.0" layoutY="285.0" startX="43.0" startY="-8.0" stroke="WHITE" />
+            <Line endX="88.0" endY="-18.0" layoutX="242.0" layoutY="295.0" startX="113.0" startY="-18.0" stroke="WHITE" />
+            <Line endX="157.0" endY="-28.0" layoutX="252.0" layoutY="305.0" startX="134.0" startY="-28.0" stroke="WHITE" />
+            <Line endX="177.0" endY="-38.0" layoutX="262.0" layoutY="315.0" startX="201.0" startY="-38.0" stroke="WHITE" />
+            <Line endX="253.0" endY="-48.0" layoutX="272.0" layoutY="325.0" startX="221.0" startY="-48.0" stroke="WHITE" />
+            <Label layoutX="136.0" layoutY="183.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="0" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="189.0" layoutY="207.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="241.0" layoutY="232.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="/" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="282.0" layoutY="253.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="338.0" layoutY="254.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="0" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="391.0" layoutY="253.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="R" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="444.0" layoutY="253.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="1" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="498.0" layoutY="254.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="7" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="165.0" layoutY="287.0">
+               <children>
+                  <Circle fx:id="q49" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q49" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="-99.0" endY="-74.0" layoutX="212.0" layoutY="265.0" startX="-54.5" startY="12.0" stroke="WHITE" />
+            <Label layoutX="135.0" layoutY="219.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="2" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="237.0" layoutY="335.0">
+               <children>
+                  <Circle fx:id="q50" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q50" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="326.0" layoutY="335.0">
+               <children>
+                  <Circle fx:id="q51" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q51" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="407.0" layoutY="335.0">
+               <children>
+                  <Circle fx:id="q52" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q52" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="492.0" layoutY="335.0">
+               <children>
+                  <Circle fx:id="q53" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q53" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="571.0" layoutY="335.0">
+               <children>
+                  <Circle fx:id="q54" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q54" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="667.0" layoutY="329.0">
+               <children>
+                  <Circle fx:id="q55" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q55" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="775.0" layoutY="299.0">
+               <children>
+                  <Circle fx:id="q56" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q56" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="857.0" layoutY="250.0">
+               <children>
+                  <Circle fx:id="q57" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q57" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="571.5" endY="-100.0" layoutX="282.0" layoutY="335.0" startX="527.0" startY="-260.0" stroke="WHITE" />
+            <Line endX="3.0" endY="52.5" layoutX="222.0" layoutY="275.0" startX="-44.99609375" startY="21.0" stroke="WHITE" />
+            <Line endX="20.5" endY="50.0" layoutX="232.0" layoutY="285.0" startX="79.0" startY="50.0" stroke="WHITE" />
+            <Line endX="127.0" endY="52.0" layoutX="265.0" layoutY="283.0" startX="76.0" startY="52.0" stroke="WHITE" />
+            <Line endX="147.0" endY="42.0" layoutX="275.0" layoutY="293.0" startX="202.0" startY="42.0" stroke="WHITE" />
+            <Line endX="271.0" endY="32.0" layoutX="285.0" layoutY="303.0" startX="222.0" startY="32.0" stroke="WHITE" />
+            <Line endX="291.0" endY="22.0" layoutX="295.0" layoutY="313.0" startX="357.0" startY="19.5" stroke="WHITE" />
+            <Line endX="455.0" endY="-19.0" layoutX="305.0" layoutY="323.0" startX="377.0" startY="6.0" stroke="WHITE" />
+            <Line endX="472.00390625" endY="-42.0" layoutX="315.0" layoutY="333.0" startX="527.0" startY="-78.5" stroke="WHITE" />
+            <Group layoutX="180.0" layoutY="406.0">
+               <children>
+                  <Circle fx:id="q58" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q58" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="-115.0" endY="-82.0" layoutX="222.0" layoutY="275.0" startX="-51.0" startY="119.0" stroke="WHITE" />
+            <Label layoutX="130.0" layoutY="258.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="7" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="241.0" layoutY="406.0">
+               <children>
+                  <Circle fx:id="q59" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q59" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="299.0" layoutY="406.0">
+               <children>
+                  <Circle fx:id="q60" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q60" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="359.0" layoutY="406.0">
+               <children>
+                  <Circle fx:id="q61" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q61" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="427.0" layoutY="406.0">
+               <children>
+                  <Circle fx:id="q62" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q62" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="495.0" layoutY="406.0">
+               <children>
+                  <Circle fx:id="q63" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q63" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="563.0" layoutY="406.0">
+               <children>
+                  <Circle fx:id="q64" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q64" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="630.0" layoutY="406.0">
+               <children>
+                  <Circle fx:id="q65" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q65" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="703.0" layoutY="406.0">
+               <children>
+                  <Circle fx:id="q66" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q66" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="772.0" layoutY="406.0">
+               <children>
+                  <Circle fx:id="q67" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q67" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="905.0" layoutY="406.0">
+               <children>
+                  <Circle fx:id="q0122224343" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="q69" fill="#bcdeff" radius="12.5" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q69" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="-4.5" endY="122.0" layoutX="232.0" layoutY="285.0" startX="-37.0" startY="122.0" stroke="WHITE" />
+            <Line endX="14.5" endY="111.0" layoutX="242.0" layoutY="295.0" startX="42.0" startY="111.0" stroke="WHITE" />
+            <Line endX="72.5" endY="108.0" layoutX="273.0" layoutY="298.0" startX="41.0" startY="108.0" stroke="WHITE" />
+            <Line endX="73.0" endY="105.0" layoutX="301.0" layoutY="301.0" startX="112.0" startY="105.0" stroke="WHITE" />
+            <Line endX="169.0" endY="95.0" layoutX="311.0" layoutY="311.0" startX="131.0" startY="95.0" stroke="WHITE" />
+            <Line endX="189.0" endY="85.0" layoutX="321.0" layoutY="321.0" startX="227.0" startY="85.0" stroke="WHITE" />
+            <Line endX="284.0" endY="75.0" layoutX="331.0" layoutY="331.0" startX="247.0" startY="75.0" stroke="WHITE" />
+            <Line endX="304.0" endY="65.0" layoutX="341.0" layoutY="341.0" startX="347.0" startY="65.0" stroke="WHITE" />
+            <Line endX="406.0" endY="55.0" layoutX="351.0" layoutY="351.0" startX="367.0" startY="55.0" stroke="WHITE" />
+            <Line endX="426.0" endY="45.0" layoutX="422.0" layoutY="361.0" startX="469.0" startY="45.0" stroke="WHITE" />
+            <Group layoutX="148.0" layoutY="484.0">
+               <children>
+                  <Circle fx:id="q70" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q70" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="-132.0" endY="-94.5" layoutX="232.0" layoutY="285.0" startX="-87.5" startY="184.0" stroke="WHITE" />
+            <Label layoutX="120.0" layoutY="305.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="8" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="216.0" layoutY="484.0">
+               <children>
+                  <Circle fx:id="q71" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q71" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="286.0" layoutY="484.0">
+               <children>
+                  <Circle fx:id="q72" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q72" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="349.0" layoutY="484.0">
+               <children>
+                  <Circle fx:id="q73" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q73" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="474.0" layoutY="484.0">
+               <children>
+                  <Circle fx:id="q75" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q75" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="415.0" layoutY="484.0">
+               <children>
+                  <Circle fx:id="q74" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q74" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="536.0" layoutY="484.0">
+               <children>
+                  <Circle fx:id="q76" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q76" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="601.0" layoutY="484.0">
+               <children>
+                  <Circle fx:id="q77" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q77" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="661.0" layoutY="484.0">
+               <children>
+                  <Circle fx:id="q78" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q78" textFill="#383838" />
+               </children>
+            </Group>
+            <Group layoutX="719.0" layoutY="484.0">
+               <children>
+                  <Circle fx:id="q79" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q79" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="-40.0" endY="189.0" layoutX="242.0" layoutY="295.0" startX="-79.0" startY="189.0" stroke="WHITE" />
+            <Line endX="19.0" endY="179.0" layoutX="252.0" layoutY="305.0" startX="-21.0" startY="179.0" stroke="WHITE" />
+            <Line endX="39.0" endY="169.0" layoutX="262.0" layoutY="315.0" startX="72.0" startY="169.0" stroke="WHITE" />
+            <Line endX="128.0" endY="159.0" layoutX="272.0" layoutY="325.0" startX="92.0" startY="159.0" stroke="WHITE" />
+            <Line endX="129.0" endY="155.0" layoutX="301.0" layoutY="329.0" startX="158.0" startY="155.0" stroke="WHITE" />
+            <Line endX="210.0" endY="145.0" layoutX="311.0" layoutY="339.0" startX="178.0" startY="145.0" stroke="WHITE" />
+            <Line endX="230.0" endY="135.0" layoutX="321.0" layoutY="349.0" startX="265.0" startY="135.0" stroke="WHITE" />
+            <Line endX="315.0" endY="125.0" layoutX="331.0" layoutY="359.0" startX="285.0" startY="125.0" stroke="WHITE" />
+            <Line endX="335.0" endY="115.0" layoutX="341.0" layoutY="369.0" startX="363.0" startY="115.0" stroke="WHITE" />
+            <Line endX="473.0" endY="38.5" layoutX="351.0" layoutY="379.0" startX="383.0" startY="105.0" stroke="WHITE" />
+            <Label layoutX="200.0" layoutY="294.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="278.0" layoutY="313.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="/" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="362.0" layoutY="311.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="447.0" layoutY="313.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="526.0" layoutY="313.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="R" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="616.0" layoutY="312.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="1" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="711.0" layoutY="293.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="7" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="807.0" layoutY="249.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="9" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="832.0" layoutY="139.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="202.0" layoutY="386.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="263.0" layoutY="385.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="/" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="321.0" layoutY="385.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="388.0" layoutY="384.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="455.0" layoutY="384.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="R" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="524.0" layoutY="384.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="2" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="592.0" layoutY="385.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="0" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="663.0" layoutY="385.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="1" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="731.0" layoutY="384.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="1" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="856.0" layoutY="385.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="H" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="177.0" layoutY="461.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="5" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="248.0" layoutY="461.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="/" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="312.0" layoutY="463.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="6" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="376.0" layoutY="462.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="0" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="438.0" layoutY="461.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="R" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="500.0" layoutY="462.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="1" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="563.0" layoutY="461.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="8" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="628.0" layoutY="461.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="1" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="684.0" layoutY="464.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="2" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="766.0" layoutY="435.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="0" textAlignment="CENTER" textFill="WHITE" />
+            <Group layoutX="833.0" layoutY="406.0">
+               <children>
+                  <Circle fx:id="q68" fill="#bcdeff" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="-8.0" layoutY="-8.0" text="q68" textFill="#383838" />
+               </children>
+            </Group>
+            <Line endX="457.0" endY="44.5" layoutX="361.0" layoutY="361.0" startX="426.0" startY="45.0" stroke="WHITE" />
+            <Label layoutX="796.0" layoutY="385.0" prefHeight="27.0" prefWidth="13.0" style="-fx-alignment: center;" text="3" textAlignment="CENTER" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
