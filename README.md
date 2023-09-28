@@ -1,6 +1,5 @@
 # automata-java
-> [!NOTE] \
-> Automata para las siguientes entradas
+> ### Automata para las siguientes entradas
 > - 285/60R18120H
 > - 215/45R1889W
 > - 195/60R1588V
