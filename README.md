@@ -1,7 +1,7 @@
 # automata-java
 No vuelvo a agarrar el papelito mas grande
 
-> [!INFO] \
+> [!NOTE] \
 > Automata para las siguientes entradas
 > - 285/60R18120H
 > - 215/45R1889W
