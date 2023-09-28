@@ -1,6 +1,4 @@
 # automata-java
-No vuelvo a agarrar el papelito mas grande
-
 > [!NOTE] \
 > Automata para las siguientes entradas
 > - 285/60R18120H
