@@ -9,3 +9,5 @@
 > - 185/55R1683V
 > - 215/55R1794V
 > - 215/45R1690W
+
+![image](https://github.com/JBunCE/automata-java/assets/62081821/ce771c4b-1935-4fe3-ad6d-01250d73161a)
